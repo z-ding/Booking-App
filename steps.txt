@@ -1,0 +1,12 @@
+run npm install and then npm start
+
+a. create route for multiple pages
+1. run npm install react-router-dom
+2. import { BrowserRouter, Routes, Route } from 'react-router-dom' in app.js
+3. wrap the app return part in     <BrowserRouter><Routes>      </Routes></BrowserRouter>
+4. add route with path and element inside, create folder and files for the elements
+5. create arrow function components for each page
+
+b. create page
+1. add XX.css file within the same folder and import the css file in page.js
+2. create each components in the components folder

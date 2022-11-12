@@ -2,7 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\navbar",
+    "\\src\\pages",
+    "\\src\\pages\\Home",
+    "\\src\\pages\\hotel",
+    "\\src\\pages\\list"
   ],
+  "SelectedNode": "\\src\\components\\navbar\\navbar.css",
   "PreviewInSolutionExplorer": false
 }

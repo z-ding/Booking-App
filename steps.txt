@@ -10,3 +10,6 @@ a. create route for multiple pages
 b. create page
 1. add XX.css file within the same folder and import the css file in page.js
 2. create each components in the components folder
+3. add component to where it belongs to
+* we will use fontawsome library for icons, follow the 3-step install procedure //https://fontawesome.com/docs/web/use-with/react/
+* we will use react-date-range library to show calendar

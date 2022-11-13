@@ -4,9 +4,9 @@
     "\\public",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\header",
     "\\src\\components\\navbar",
     "\\src\\pages",
-    "\\src\\pages\\Home",
     "\\src\\pages\\hotel",
     "\\src\\pages\\list"
   ],

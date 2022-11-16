@@ -7,7 +7,8 @@ import {
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from "react-date-range";
-import {format } from 'date-fns'
+import { format } from 'date-fns'
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
   //calendar
@@ -44,9 +45,16 @@ const Header = ({ type }) => {
       }
     })
   }
+
+  //useNavigate redirect user to other component / page
+  const navigate = useNavigate()
+  const [destination, setdestination] = React.useState("")
+  const handleSearch = ()=>{
+    navigate("/hotels", { state: { destination, date, options } }); //pass in state as an option object
+   }
   return (
     <div className="header">
-      <div className="headerContainer">
+      <div className={type === "list" ? "headerContainer listMode" :"headerContainer" }>
         <div className="headerlist">
           <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
@@ -83,6 +91,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="Where are you going?"
                   className="headerSearchInput"
+                  onChange={ e=> setdestination(e.target.value) }
                 />
               </div>
               <div className="headerSearchItem">
@@ -129,7 +138,7 @@ const Header = ({ type }) => {
                 </div>}
               </div>
               <div className="headerSearchItem">
-                <button className="headerbutton"> Search </button>
+                <button className="headerbutton" onClick={handleSearch }> Search </button>
               </div>
             </div>
           </>

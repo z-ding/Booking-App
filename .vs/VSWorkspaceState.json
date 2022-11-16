@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\header",
-    "\\src\\components\\navbar",
+    "\\src\\components\\mailList",
+    "\\src\\components\\propertyList",
+    "\\src\\components\\searchItem",
     "\\src\\pages",
     "\\src\\pages\\hotel",
     "\\src\\pages\\list"
   ],
-  "SelectedNode": "\\src\\components\\navbar\\navbar.css",
+  "SelectedNode": "\\src\\pages\\hotel\\Hotel.js",
   "PreviewInSolutionExplorer": false
 }
